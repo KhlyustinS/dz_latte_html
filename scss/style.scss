@@ -1,0 +1,322 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font-family;
+  width: 1300px;
+}
+
+.header {
+  grid-column: 1/12;
+  font-family: $font-family;
+  margin: 0;
+
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -131px;
+    background-color: $bg-color;
+    padding: 0;
+    color: $white-text;
+
+    .header__nav--point {
+      @include list-style;
+      text-decoration-color: $white-text;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .header__nav--logo {
+      @include list-style;
+    }
+  }
+}
+
+.intro {
+  /*@extend %grid-column;*/
+  background-image: url("../img/intro.jpg");
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 183px;
+
+  .intro__title {
+    color: $main-color;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+  }
+  .intro__description {
+    color: $white-text;
+    margin: 15px 0 15px 0;
+    width: 500px;
+  }
+  .button {
+    color: $white-text;
+    font-family: $font-family-add;
+    font-size: .9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $white-text;
+    margin-top: 10px;
+    padding: 18px 46px;
+    &:hover {
+      color: $main-color;
+      border: 2px solid $main-color;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $bg-color;
+    width: 1000px;
+    height: 2px;
+    margin: 60px 0 60px 0;
+  }
+
+  .about__title {
+
+    .about__title--so-good {
+      border-bottom: 1px solid $bg-color;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  .about__description {
+    font-family: $font-family-add;
+    width: 750px;
+  }
+}
+
+.menu {
+  @extend %grid-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .menu__title {
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .menu__offers {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu__offers__block__coffee {
+    background-image: url("../img/coffee.jpg");
+    @include size;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .menu__offers__block__tea {
+    background-image: url("../img/tea.jpg");
+    @include size;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .menu__offers__block__desserts {
+    background-image: url("../img/desserts.jpg");
+    @include size;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .menu__offers__block__coffee, .menu__offers__block__tea, .menu__offers__block__desserts {
+    @include block;
+  }
+
+  .menu__offers__block__price {
+    font-family: $font-family-add;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0 30px 0;
+  }
+
+  .price__text {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 70px 5px 70px;
+  }
+
+  .menu__button {
+    margin-top: 60px;
+    &::after {
+      content: "";
+      display: block;
+      background-color: $bg-color;
+      width: 1000px;
+      height: 2px;
+      margin: 100px 0 60px 0;
+    }
+
+    .button {
+      color: #000;
+      font-family: $font-family-add;
+      font-size: 13px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid #000;
+      padding: 18px 46px;
+      &:hover {
+        color: $main-color;
+        border: 2px solid $main-color;
+      }
+    }
+  }
+}
+.testimonials {
+  margin-bottom: 80px;
+
+  .testimonials__title {
+      text-align: center;
+      text-transform: uppercase;
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+  .testimonials__content {
+    @extend %grid-column;
+    display: flex;
+    height: 425px;
+
+    .testimonials__opinion {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #39312f;
+      width: auto;
+      
+      .testimonials__opinion__img {
+        background-image: url("../img/chris.jpg");
+        width: 85px;
+        height: 85px;
+        border-radius: 50px 50px 50px 50px;
+      }
+
+      .testimonials__opinion__name {
+        color: $main-color;
+      }
+      .testimonials__opinion__text {
+        color: $white-text;
+        text-align: center;
+        height: 85px;
+        margin: 0 70px 0 70px;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+  .location {
+
+    @extend %grid-column;
+    margin-bottom: 15px;
+
+    .location__title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .location__location-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .location__location-block__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: $main-color;
+        height: 425px;
+        margin: 0;
+        padding: 25px 0 25px 50px;
+
+        .location__location-block__description__list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .description__list__title {
+            font-family: $font-family;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            margin: 18px 0 10px 0;
+          }
+          .description__list__hours {
+            display: flex;
+            justify-content: space-between;
+            font-family: $font-family-add;
+            padding-right: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    @extend %grid-column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    background-color: #39312f;
+
+    .footer-sm {
+      display: flex;
+      justify-content: space-around;
+      width: inherit;
+      }
+
+    .footer__title {
+      color: $white-text;
+      font-family: $font-family-add;
+      font-size: 1.1em;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }

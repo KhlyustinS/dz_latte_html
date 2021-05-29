@@ -1,0 +1,29 @@
+@mixin list-style {
+  list-style-type: none;
+  margin: 0 15px 0 15px;
+}
+
+@mixin size {
+  background-size: cover;
+  width: 396px;
+  height: 294px;
+}
+
+@mixin block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+%grid-column {
+  grid-column: 1/5;
+}
+
+$font-family: Playfair Display, Lato, sans-serif;
+$font-family-add: Lato, sans-serif;
+$main-color: #f5d76e;
+$white-text: #fff;
+$bg-color: rgba(0, 0, 0, .35);

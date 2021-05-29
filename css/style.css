@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600&display=swap");
+.menu, .testimonials .testimonials__content, .location, .footer { grid-column: 1/5; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0 auto; padding: 0; font-family: Playfair Display, Lato, sans-serif; width: 1300px; }
+
+.header { grid-column: 1/12; font-family: Playfair Display, Lato, sans-serif; margin: 0; }
+
+.header .header__nav { display: flex; justify-content: center; align-items: center; position: relative; margin-bottom: -131px; background-color: rgba(0, 0, 0, 0.35); padding: 0; color: #fff; }
+
+.header .header__nav .header__nav--point { list-style-type: none; margin: 0 15px 0 15px; text-decoration-color: #fff; }
+
+.header .header__nav .header__nav--point:hover { color: #f5d76e; }
+
+.header .header__nav .header__nav--logo { list-style-type: none; margin: 0 15px 0 15px; }
+
+.intro { /*@extend %grid-column;*/ background-image: url("../img/intro.jpg"); background-size: cover; height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-left: 183px; }
+
+.intro .intro__title { color: #f5d76e; font-size: 3em; text-align: center; margin: 0; }
+
+.intro .intro__description { color: #fff; margin: 15px 0 15px 0; width: 500px; }
+
+.intro .button { color: #fff; font-family: Lato, sans-serif; font-size: .9em; text-transform: uppercase; text-decoration: none; border: 2px solid #fff; margin-top: 10px; padding: 18px 46px; }
+
+.intro .button:hover { color: #f5d76e; border: 2px solid #f5d76e; }
+
+.about { display: flex; flex-direction: column; align-items: center; width: 100%; text-align: center; margin-top: 60px; }
+
+.about::after { content: ""; display: block; background-color: rgba(0, 0, 0, 0.35); width: 1000px; height: 2px; margin: 60px 0 60px 0; }
+
+.about .about__title .about__title--so-good { border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
+
+.about .about__title .about__title--so-good:hover { color: #f5d76e; }
+
+.about .about__description { font-family: Lato, sans-serif; width: 750px; }
+
+.menu { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+.menu .menu__title { text-align: center; text-transform: uppercase; }
+
+.menu .menu__title:hover { color: #f5d76e; }
+
+.menu .menu__offers { display: flex; justify-content: space-around; }
+
+.menu .menu__offers__block__coffee { background-image: url("../img/coffee.jpg"); background-size: cover; width: 396px; height: 294px; }
+
+.menu .menu__offers__block__coffee:hover { color: #f5d76e; }
+
+.menu .menu__offers__block__tea { background-image: url("../img/tea.jpg"); background-size: cover; width: 396px; height: 294px; }
+
+.menu .menu__offers__block__tea:hover { color: #f5d76e; }
+
+.menu .menu__offers__block__desserts { background-image: url("../img/desserts.jpg"); background-size: cover; width: 396px; height: 294px; }
+
+.menu .menu__offers__block__desserts:hover { color: #f5d76e; }
+
+.menu .menu__offers__block__coffee, .menu .menu__offers__block__tea, .menu .menu__offers__block__desserts { display: flex; justify-content: center; align-items: center; font-size: 1.3em; font-family: Playfair Display, Lato, sans-serif; text-transform: uppercase; }
+
+.menu .menu__offers__block__price { font-family: Lato, sans-serif; display: flex; flex-direction: column; list-style-type: none; padding: 0; margin: 30px 0 30px 0; }
+
+.menu .price__text { display: flex; justify-content: space-between; margin: 5px 70px 5px 70px; }
+
+.menu .menu__button { margin-top: 60px; }
+
+.menu .menu__button::after { content: ""; display: block; background-color: rgba(0, 0, 0, 0.35); width: 1000px; height: 2px; margin: 100px 0 60px 0; }
+
+.menu .menu__button .button { color: #000; font-family: Lato, sans-serif; font-size: 13px; text-transform: uppercase; text-decoration: none; border: 2px solid #000; padding: 18px 46px; }
+
+.menu .menu__button .button:hover { color: #f5d76e; border: 2px solid #f5d76e; }
+
+.testimonials { margin-bottom: 80px; }
+
+.testimonials .testimonials__title { text-align: center; text-transform: uppercase; }
+
+.testimonials .testimonials__title:hover { color: #f5d76e; }
+
+.testimonials .testimonials__content { display: flex; height: 425px; }
+
+.testimonials .testimonials__content .testimonials__opinion { display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #39312f; width: auto; }
+
+.testimonials .testimonials__content .testimonials__opinion .testimonials__opinion__img { background-image: url("../img/chris.jpg"); width: 85px; height: 85px; border-radius: 50px 50px 50px 50px; }
+
+.testimonials .testimonials__content .testimonials__opinion .testimonials__opinion__name { color: #f5d76e; }
+
+.testimonials .testimonials__content .testimonials__opinion .testimonials__opinion__text { color: #fff; text-align: center; height: 85px; margin: 0 70px 0 70px; }
+
+.testimonials .testimonials__content .testimonials__opinion .testimonials__opinion__text:hover { color: #f5d76e; }
+
+.location { margin-bottom: 15px; }
+
+.location .location__title { text-align: center; text-transform: uppercase; margin-bottom: 40px; }
+
+.location .location__title:hover { color: #f5d76e; }
+
+.location .location__location-block { display: flex; justify-content: center; align-items: center; }
+
+.location .location__location-block .location__location-block__description { display: flex; flex-direction: column; justify-content: space-around; list-style-type: none; background-color: #f5d76e; height: 425px; margin: 0; padding: 25px 0 25px 50px; }
+
+.location .location__location-block .location__location-block__description .location__location-block__description__list { display: flex; flex-direction: column; align-items: flex-start; }
+
+.location .location__location-block .location__location-block__description .location__location-block__description__list .description__list__title { font-family: Playfair Display, Lato, sans-serif; text-transform: uppercase; font-size: 1.4em; margin: 18px 0 10px 0; }
+
+.location .location__location-block .location__location-block__description .location__location-block__description__list .description__list__hours { display: flex; justify-content: space-between; font-family: Lato, sans-serif; padding-right: 60px; }
+
+.footer { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 320px; background-color: #39312f; }
+
+.footer .footer-sm { display: flex; justify-content: space-around; width: inherit; }
+
+.footer .footer__title { color: #fff; font-family: Lato, sans-serif; font-size: 1.1em; }
+
+.footer .footer__title:hover { color: #f5d76e; }
